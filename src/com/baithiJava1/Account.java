@@ -2,13 +2,13 @@ package com.baithiJava1;
 
 import java.util.Scanner;
 
-public class Acount {
+public class Account {
     private String customerCode;
     private String customerName;
     private int accNumber;
     private long amount;
 
-    public Acount() {
+    public Account() {
         this.customerCode = "";
         this.customerName = "";
         this.accNumber = 0;

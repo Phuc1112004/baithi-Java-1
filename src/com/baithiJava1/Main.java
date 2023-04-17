@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Acount account = new Acount();
+        Account account = new Account();
 
         account.input();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to deposit or withdraw money? (0: Deposit, 1: Withdraw)");
         int type = scanner.nextInt();
-        if(!(type == 0 || type == 1)) {
+        if (!(type == 0 || type == 1)) {
             System.out.println("Invalid transaction type. Please try again.");
             System.out.println("Do you want to deposit or withdraw money? (0: Deposit, 1: Withdraw)");
             type = scanner.nextInt();
