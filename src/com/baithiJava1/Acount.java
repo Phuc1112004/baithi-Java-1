@@ -20,7 +20,7 @@ public class Acount {
 
         System.out.println("Enter customer code (5 characters):");
         String code = scanner.nextLine().trim();
-        while (code.length() != 5) {
+        if (code.length() != 5) {
             System.out.println("Invalid customer code (must be 5 characters). Please try again.");
             System.out.println("Enter customer code (5 characters):");
             code = scanner.nextLine().trim();
@@ -43,7 +43,7 @@ public class Acount {
 
         System.out.println("Enter customer name:");
         String name = scanner.nextLine().trim();
-        while (name.isEmpty()) {
+        if (name.isEmpty()) {
             System.out.println("Invalid customer name. Please try again.");
             System.out.println("Enter customer name:");
             name = scanner.nextLine().trim();
